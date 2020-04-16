@@ -95,40 +95,44 @@ nav {
     }
   }
 }
-.category-items {
-  height: 300px;
+.category {
+  padding: 3rem 4rem;
+  text-align: center;
+  .category-items {
+    height: 300px;
 
-  .cat-card {
-    & .card-body {
-      background-color: #f5f5f5;
-      padding: 4rem;
-      border-radius: 25px;
-      transition: all 0.35s ease-in-out;
+    .cat-card {
+      & .card-body {
+        background-color: #f5f5f5;
+        padding: 4rem;
+        border-radius: 25px;
+        transition: all 0.35s ease-in-out;
 
-      &:hover {
-        background-color: #dbb354 !important;
-        border-radius: 58px !important;
+        &:hover {
+          background-color: #dbb354 !important;
+          border-radius: 58px !important;
 
-        & ~ p {
-          color: #dbb354 !important;
-          font-weight: bolder;
-          font-size: 20px;
+          & ~ p {
+            color: #dbb354 !important;
+            font-weight: bolder;
+            font-size: 20px;
+          }
+
+          & svg {
+            fill: #000;
+          }
         }
 
         & svg {
-          fill: #000;
+          fill: #e8e8e8;
+          transition: all 0.35s ease-in-out;
         }
       }
 
-      & svg {
-        fill: #e8e8e8;
+      & p {
+        color: #e8e8e8 !important;
         transition: all 0.35s ease-in-out;
       }
-    }
-
-    & p {
-      color: #e8e8e8 !important;
-      transition: all 0.35s ease-in-out;
     }
   }
 }
@@ -196,6 +200,58 @@ nav {
 
       &:nth-child(4) {
         margin-right: 0;
+      }
+    }
+  }
+}
+
+/** SUmo select **/
+
+.SumoSelect {
+  .CaptionCont {
+    background-color: #d4b354;
+    width: 300px;
+    height: 40px;
+    line-height: 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+    box-shadow: 0px 4px 0 0 rgba(175, 138, 51, 0.5);
+
+    &:hover {
+      box-shadow: 0px 4px 0 0 rgba(175, 138, 51, 0.5);
+    }
+
+    label {
+      i {
+        opacity: 1;
+        top: 8px;
+      }
+    }
+  }
+
+  &.open {
+    .optWrapper {
+      top: 40px;
+      width: 150%;
+      color: #d4b354;
+      background-color: #000;
+
+      .options {
+        li {
+          height: 40px;
+          line-height: 30px;
+
+          &:hover {
+            background-color: #d4b354;
+            color: #000;
+          }
+
+          &.selected {
+            label {
+              color: white !important;
+            }
+          }
+        }
       }
     }
   }
