@@ -66,28 +66,11 @@ nav a:hover::before {
 }
 
 nav a.event-menu {
-  font-family: "Avenir-Bold";
-  font-weight: 900;
-  text-decoration: none;
-  color: #dbb354;
+  color: #dbb354 !important;
 }
 
 nav a.event-menu:hover {
-  bottom: -3px;
-  content: "";
-  height: 3px;
-  position: absolute;
-  width: 22px;
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  -webkit-transition: transform 250ms ease-in-out;
-  -moz-transition: transform 250ms ease-in-out;
-  background: #dbb354;
+  background: #dbb354 !important;
 }
 
 .signupbtn:hover {

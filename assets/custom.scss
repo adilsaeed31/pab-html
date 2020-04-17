@@ -63,24 +63,10 @@ nav {
     }
 
     &.event-menu {
-      font-family: "Avenir-Bold";
-      font-weight: 900;
-      text-decoration: none;
-      color: $primary-color;
+      color: $primary-color !important;
 
       &:hover {
-        bottom: -3px;
-        content: "";
-        height: 3px;
-        position: absolute;
-        width: 22px;
-        transform: scaleX(1);
-        -webkit-transform: scaleX(1);
-        -moz-transform: scaleX(1);
-        transition: transform 250ms ease-in-out;
-        -webkit-transition: transform 250ms ease-in-out;
-        -moz-transition: transform 250ms ease-in-out;
-        background: $primary-color;
+        background: $primary-color !important;
       }
     }
   }
