@@ -66,6 +66,10 @@ nav {
       color: $primary-color !important;
 
       &:hover {
+        color: $primary-color !important;
+      }
+
+      &::before {
         background: $primary-color !important;
       }
     }
