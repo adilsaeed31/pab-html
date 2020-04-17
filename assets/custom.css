@@ -115,7 +115,7 @@ nav a:hover::before {
 
 .category .category-items .cat-card .card-body {
   background-color: #f5f5f5;
-  padding: 4rem;
+  padding: 3rem 2rem;
   border-radius: 25px;
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
