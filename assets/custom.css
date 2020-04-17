@@ -65,6 +65,14 @@ nav a:hover::before {
   -moz-transform-origin: 0% 100%;
 }
 
+nav a.event-menu {
+  color: #dbb354;
+}
+
+nav a.event-menu:hover {
+  background: #dbb354;
+}
+
 .signupbtn:hover {
   color: #000;
 }
