@@ -1,4 +1,4 @@
-$(".owl-carousel").owlCarousel({
+$(".owl-carousel1").owlCarousel({
   loop: true,
   margin: 30,
   nav: true,
@@ -17,7 +17,25 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+$(".owl-carousel2").owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: true,
+  items: 3,
+  slideBy: 3,
+  dots: true,
+  autoplay: false,
+  autoplayTimeout: 5000,
 
+  responsive: {
+    0: {
+      items: 2,
+    },
+    992: {
+      items: 5,
+    },
+  },
+});
 function nextVideo(obj) {
   let elems = document.getElementsByClassName("customLabel");
   let forLabel = parseInt(obj.getAttribute("for").replace("s", ""));
