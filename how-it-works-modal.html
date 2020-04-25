@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/style.css?v=1" />
+    <link rel="stylesheet" href="./assets/custom.css?v=1" />
+    <style>
+        
+/* The Modal (background) */
+.howitworks-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  overflow: hidden; /* Enable scroll if needed */
+  background:white;
+  height: 100%;
+}
+
+/* Modal Content */
+.howitworks-modal-content {
+  background: url("assets/images/modal-bg.png") no-repeat top,
+  linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  box-sizing:border-box;
+  padding: 50px 100px 50px 100px ;
+  
+}
+.howitworks-modal-content:before {
+  position: absolute;
+    margin-top: 80px;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: skewY(5deg);
+  background: black;
+  height: 80%;
+  width: 100%;
+}
+.howitworks-modal-content:after {
+    margin-top: 50px;
+  position:absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: skewY(-5deg);
+  background: #d4b354;
+  height: 88%;
+  width: 100%;
+}
+.howitworks-modal-content .row{
+    position: relative; 
+    z-index: 3;
+    height: 500px;
+}
+.howitworks-modal-content .row a{
+text-decoration: none;
+color: #d4b354;
+}
+/* The Close Button */
+.close {
+  
+  float: right;
+  font-size: 60px;
+  font-weight: 800;
+  z-index: 3;
+  position: relative;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+    .howitworks-title{
+        margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2.1px;
+    color: #000000;
+    text-transform: uppercase;
+    z-index: 3;
+    position: relative;
+}
+.howitworks-cards{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: black;
+    position: relative;
+    z-index: 3;  
+    font-size: 24.5px;
+    font-weight: bold;
+}
+.howitworks-cards:nth-child(3){
+    margin-bottom: 0px;
+}
+.howitworks-cards .img img{
+    width: 61px;
+    height: 61px;
+}
+.howitworks-cards .text{
+    margin-left: 50px;
+}
+
+.howitworks-video{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+.howitworks-video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: black;
+}
+.howitworks-video video[poster]{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+</style>
+
+</head>
+<body>
+    <section class="modal-section">
+        <h2>Modal Example</h2>
+        
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="howitworks-modal">
+        
+          <!-- Modal content -->
+          <div class="howitworks-modal-content container-fluid">
+            <span class="close"><i class="fa fa-close text-black"></i></span>
+            <div class="howitworks-title">
+                <p>how it works</p>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <a href="#"  class="howitworks-cards">
+                        <div class="img"><img src="assets/images/search.png" alt=""></div>
+                        <div class="text"><p>BROWSE</p></div>
+                    </a>
+                    <a href="#" class="howitworks-cards">
+                        <div class="img"><img src="assets/images/p.png" alt=""></div>
+                        <div class="text"><p>PICK</p></div>
+                    </a>
+                    <a href="#" class="howitworks-cards">
+                        <div class="img"><img src="assets/images/money.png" alt=""></div>
+                        <div class="text"><p>PAY</p></div>
+                    </a>
+                </div>
+                <div class="col-9 howitworks-video">
+                    <video poster="./assets/images/video-poster.png" width="100%" controls>
+                        <source src="./assets/video/v1.mp4" type="video/mp4" />
+                      </video>
+                </div>
+            </div>
+            
+          </div>
+        
+        </div>
+        
+    </section>
+
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+    
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/owl/owl.carousel.min.js"></script>
+    <script src="http://hemantnegi.github.io/jquery.sumoselect/javascripts/jquery.sumoselect.js"></script>
+    <script src="./assets/jquery/custom.js"></script>
+</body>
+</html>
