@@ -40,7 +40,141 @@
 body {
   font-family: Montserrat;
 }
+#myBtn{
+  cursor:pointer;
+}
+           
+/* The Modal (background) */
+.howitworks-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  overflow: hidden; /* Enable scroll if needed */
+  background:white;
+  height: 100%;
+}
 
+/* Modal Content */
+.howitworks-modal-content {
+  background: url('images/modal-bg.png') no-repeat top,
+  linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  box-sizing:border-box;
+  padding: 50px 100px 50px 100px ;
+  
+}
+.howitworks-modal-content:before {
+    margin-top: 70px;
+  position:absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: skewY(5deg);
+  background: black;
+  height: 80%;
+  width: 100%;
+}
+.howitworks-modal-content:after {
+    margin-top: 50px;
+  position:absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: skewY(-5deg);
+  background: #d4b354;
+  height: 88%;
+  width: 100%;
+}
+.howitworks-modal-content .row{
+    position: relative; 
+    z-index: 3;
+    height: 514px;
+}
+.howitworks-modal-content .row a{
+text-decoration: none;
+color: #d4b354;
+}
+/* The Close Button */
+.close {
+  color: #000;
+  opacity: 1;
+  float: right;
+  font-size: 40px;
+  font-weight: 800;
+  z-index: 3;
+  position: relative;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+    .howitworks-title{
+        margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2.1px;
+    color: #000000;
+    text-transform: uppercase;
+    z-index: 3;
+    position: relative;
+}
+.howitworks-cards{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: black;
+    position: relative;
+    z-index: 3;  
+    font-size: 24.5px;
+    font-weight: bold;
+}
+.howitworks-cards:nth-child(3){
+    margin-bottom: 0px;
+}
+.howitworks-cards .img img{
+    width: 61px;
+    height: 61px;
+}
+.howitworks-cards .text{
+    margin-left: 50px;
+}
+
+.howitworks-video{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 410px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 3;
+    background-color: #b79136;
+}
+.howitworks-video video{
+    width: 100%;
+    height: 410px;
+    border-radius: 20px;
+    background-color: black;
+}
+.howitworks-video video[poster]{
+    width: 100%;
+    height: 410px;
+    border-radius: 20px;
+}
 .maindiv {
   background: url("./images/main-background.png") no-repeat center top,
     linear-gradient(to top, rgba(219, 179, 84, 0.9), rgba(219, 179, 84, 1));
@@ -225,23 +359,23 @@ body {
 
 .event-section {
   margin: 95px 0px 0px 0px;
-  width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
 }
 
 .event-section .event-row {
-  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  height: 320px;
+  -webkit-overflow-scrolling: touch;
 }
-.event-section .event-row .event {
-  display: inline-block;
+
+.event-section .event-row::-webkit-scrollbar {
+  display: none;
 }
 .event-section .event-row .event .card,
 .event-section .event-row .event .card img {
   border-radius: 15px;
-}
-.first-event {
-  margin-left: 74.2px;
 }
 
 .event-section .event-row .event .card {
@@ -444,15 +578,6 @@ body {
   position: absolute;
   display: inline-block;
   z-index: 1;
-}
-
-.event-section .event-row .event .card img {
-  width: 343px;
-  height: 284.9px;
-  /* mix-blend-mode: luminosity; */
-}
-.event-section .event-row .event {
-  padding: 5px;
 }
 
 .category-cards-section {
@@ -1122,23 +1247,30 @@ body {
   margin: 65px 56px 0px 57px;
 }
 .facebook {
-  font-size: 20.5px;
+  font-size: 18px;
   display: inline-block;
   color: #d4b363;
-  margin: 20px 0px 20px 86px;
+  margin: 20px 0px 20px 70px;
+  padding:5px 12px 2px  12px;
 }
 .instagram {
   font-size: 20.5px;
   display: inline-block;
   margin: 20px 0px 20px 30px;
-  color: black;
-  background-color: #d4b363;
+  color: #d4b363;
+  padding:3px 9px 2px  9px;
 }
 .twitter {
+  padding:3px 8px 2px  8px;
   font-size: 20.5px;
   display: inline-block;
   margin: 20px 0px 20px 30px;
   color: #d4b363;
+}
+.facebook:hover,.instagram:hover,.twitter:hover{
+  background-color: #d4b363;
+  color: #000;
+  border-radius: 50px;
 }
 .contact-form {
   box-sizing: border-box;
