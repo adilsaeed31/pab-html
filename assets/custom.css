@@ -1,3 +1,7 @@
+.nav-sec-2,
+.nav-sec-3{
+  text-align: right;
+}
 nav a {
   font-family: Avenir;
   position: relative;
@@ -127,7 +131,7 @@ nav a.event-menu::before {
 
 .category .category-items .cat-card .card-body {
   background-color: #f5f5f5;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   border-radius: 25px;
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
@@ -141,7 +145,7 @@ nav a.event-menu::before {
 .category .category-items .cat-card .card-body:hover ~ p {
   color: #dbb354 !important;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .category .category-items .cat-card .card-body:hover svg {
@@ -208,9 +212,11 @@ nav a.event-menu::before {
 }
 
 .upcoming-event {
-  padding: 0rem 4rem 3rem;
+  padding: 0rem 0rem 4rem 0rem;
 }
-
+.event-section .event-row .event:nth-child(1) {
+  margin-left: 60px;
+}
 .upcoming-event .event-section {
   display: -webkit-box;
   display: -ms-flexbox;
