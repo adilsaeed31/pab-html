@@ -86,7 +86,7 @@ input::placeholder { /* WebKit, Blink, Edge */
 
 }
 
-.payments-pay-now-btn button{
+.payments-pay-now-btn button,.user-register-btn button{
     border-radius: 10px;
     background-color: black;
     color: #d8b053;
@@ -99,7 +99,8 @@ input::placeholder { /* WebKit, Blink, Edge */
 }
 .payments-pay-now-btn button:focus,
 .next-btn:focus,
-.prev-btn:focus{
+.prev-btn:focus,
+.user-register-btn{
     border: none;
     outline: none;
 }
@@ -176,46 +177,53 @@ input::placeholder { /* WebKit, Blink, Edge */
                             <div class="col-3"></div>
                             <div class="col-6">
                                 <div class="user-detail-feilds" id="user-feilds-first">
-                                        <div class="input-group mb-4">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text  register-feild-icon rfi1 " id="basic-addon1">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="33.312" height="33.349" viewBox="0 0 33.312 33.349">
-                                                        <path id="prefix__forma-1" d="M33.082 32.786a1.873 1.873 0 0 1-1.58.866H1.96a1.871 1.871 0 0 1-1.579-.866 1.918 1.918 0 0 1-.143-1.811L4.006 22.4a1.9 1.9 0 0 1 .852-.916l5.848-3.084a.376.376 0 0 1 .4.033 9.146 9.146 0 0 0 11.247 0 .374.374 0 0 1 .4-.033l5.847 3.081a1.9 1.9 0 0 1 .852.916l3.769 8.578a1.918 1.918 0 0 1-.143 1.811zM16.731 17.972c-4.124 0-7.469-3.955-7.469-8.835C9.262 2.372 12.607.3 16.731.3S24.2 2.372 24.2 9.137c0 4.88-3.343 8.835-7.469 8.835z" transform="translate(-.076 -.303)" style="fill:#dbb354;fill-rule:evenodd;opacity:.988"/>
-                                                    </svg>
-                                                    
-                                                </span>
-                                            </div>
-                                            <input  type="text" class="form-control register-input-feild" placeholder="full name"
-                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text  register-feild-icon rfi1 " id="basic-addon1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="33.312" height="33.349"
+                                                    viewBox="0 0 33.312 33.349">
+                                                    <path id="prefix__forma-1"
+                                                        d="M33.082 32.786a1.873 1.873 0 0 1-1.58.866H1.96a1.871 1.871 0 0 1-1.579-.866 1.918 1.918 0 0 1-.143-1.811L4.006 22.4a1.9 1.9 0 0 1 .852-.916l5.848-3.084a.376.376 0 0 1 .4.033 9.146 9.146 0 0 0 11.247 0 .374.374 0 0 1 .4-.033l5.847 3.081a1.9 1.9 0 0 1 .852.916l3.769 8.578a1.918 1.918 0 0 1-.143 1.811zM16.731 17.972c-4.124 0-7.469-3.955-7.469-8.835C9.262 2.372 12.607.3 16.731.3S24.2 2.372 24.2 9.137c0 4.88-3.343 8.835-7.469 8.835z"
+                                                        transform="translate(-.076 -.303)"
+                                                        style="fill:#dbb354;fill-rule:evenodd;opacity:.988" />
+                                                </svg>
+                        
+                                            </span>
                                         </div>
-                                        <div class="input-group mb-4">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text  register-feild-icon rfi2" id="basic-addon1"><i
-                                                class="fa fa-envelope"></i></span>
-                                            </div>
-                                            <input  type="text" class="form-control register-input-feild" placeholder="email address"
+                                        <input type="text" class="form-control register-input-feild" placeholder="full name"
                                             aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text  register-feild-icon rfi2" id="basic-addon1"><i
+                                                    class="fa fa-envelope"></i></span>
                                         </div>
-                                        <div class="input-group mb-4">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text  register-feild-icon rfi3" id="basic-addon1"><i
-                                                class="fa fa-question"></i></span>
-                                            </div>
-                                            <input  type="text" class="form-control register-input-feild" placeholder="company / brand"
+                                        <input type="text" class="form-control register-input-feild" placeholder="email address"
                                             aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text  register-feild-icon rfi3" id="basic-addon1"><i
+                                                    class="fa fa-question"></i></span>
                                         </div>
-                                        <div class="input-group mb-4">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text  register-feild-icon rfi4" id="basic-addon1">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24.987" height="42.342" viewBox="0 0 24.987 42.342">
-                                                        <path id="prefix__forma-1" d="M22.987.6H3.81A2.89 2.89 0 0 0 .9 3.46v36.621a2.891 2.891 0 0 0 2.9 2.861h19.187a2.89 2.89 0 0 0 2.905-2.86V3.46A2.891 2.891 0 0 0 22.987.6zM10.331 2.662h6.135a.346.346 0 1 1 0 .692h-6.135a.346.346 0 1 1 0-.692zM13.4 41.513a1.43 1.43 0 1 1 1.453-1.431 1.441 1.441 0 0 1-1.453 1.431zm10.471-3.863H2.926V5.136h20.945z" transform="translate(-.905 -.6)" style="fill:#dbb354;fill-rule:evenodd;opacity:.988"/>
-                                                    </svg>
-                                                    
-                                                </span>
-                                            </div>
-                                            <input  type="text" class="form-control register-input-feild" placeholder="phone number"
+                                        <input type="text" class="form-control register-input-feild" placeholder="company / brand"
                                             aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text  register-feild-icon rfi4" id="basic-addon1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24.987" height="42.342"
+                                                    viewBox="0 0 24.987 42.342">
+                                                    <path id="prefix__forma-1"
+                                                        d="M22.987.6H3.81A2.89 2.89 0 0 0 .9 3.46v36.621a2.891 2.891 0 0 0 2.9 2.861h19.187a2.89 2.89 0 0 0 2.905-2.86V3.46A2.891 2.891 0 0 0 22.987.6zM10.331 2.662h6.135a.346.346 0 1 1 0 .692h-6.135a.346.346 0 1 1 0-.692zM13.4 41.513a1.43 1.43 0 1 1 1.453-1.431 1.441 1.441 0 0 1-1.453 1.431zm10.471-3.863H2.926V5.136h20.945z"
+                                                        transform="translate(-.905 -.6)" style="fill:#dbb354;fill-rule:evenodd;opacity:.988" />
+                                                </svg>
+                        
+                                            </span>
                                         </div>
+                                        <input type="text" class="form-control register-input-feild" placeholder="phone number"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-3"></div>
@@ -223,84 +231,115 @@ input::placeholder { /* WebKit, Blink, Edge */
                         <div class="row">
                             <div class="col-6">
                                 <div class="user-detail-feilds-two user-detail-feilds-two-1">
-                                
+                        
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text  register-feild-icon rfi2" id="basic-addon1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="33.312" height="33.349" viewBox="0 0 33.312 33.349">
-                                                    <path id="prefix__forma-1" d="M33.082 32.786a1.873 1.873 0 0 1-1.58.866H1.96a1.871 1.871 0 0 1-1.579-.866 1.918 1.918 0 0 1-.143-1.811L4.006 22.4a1.9 1.9 0 0 1 .852-.916l5.848-3.084a.376.376 0 0 1 .4.033 9.146 9.146 0 0 0 11.247 0 .374.374 0 0 1 .4-.033l5.847 3.081a1.9 1.9 0 0 1 .852.916l3.769 8.578a1.918 1.918 0 0 1-.143 1.811zM16.731 17.972c-4.124 0-7.469-3.955-7.469-8.835C9.262 2.372 12.607.3 16.731.3S24.2 2.372 24.2 9.137c0 4.88-3.343 8.835-7.469 8.835z" transform="translate(-.076 -.303)" style="fill:#dbb354;fill-rule:evenodd;opacity:.988"/>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="33.312" height="33.349"
+                                                    viewBox="0 0 33.312 33.349">
+                                                    <path id="prefix__forma-1"
+                                                        d="M33.082 32.786a1.873 1.873 0 0 1-1.58.866H1.96a1.871 1.871 0 0 1-1.579-.866 1.918 1.918 0 0 1-.143-1.811L4.006 22.4a1.9 1.9 0 0 1 .852-.916l5.848-3.084a.376.376 0 0 1 .4.033 9.146 9.146 0 0 0 11.247 0 .374.374 0 0 1 .4-.033l5.847 3.081a1.9 1.9 0 0 1 .852.916l3.769 8.578a1.918 1.918 0 0 1-.143 1.811zM16.731 17.972c-4.124 0-7.469-3.955-7.469-8.835C9.262 2.372 12.607.3 16.731.3S24.2 2.372 24.2 9.137c0 4.88-3.343 8.835-7.469 8.835z"
+                                                        transform="translate(-.076 -.303)"
+                                                        style="fill:#dbb354;fill-rule:evenodd;opacity:.988" />
                                                 </svg>
-                                                    
+                        
                                             </span>
                                         </div>
-                                        <input  type="text" class="form-control register-input-feild" placeholder="full name"
-                                        aria-label="Username" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control register-input-feild" placeholder="full name"
+                                            aria-label="Username" aria-describedby="basic-addon1">
                                     </div>
-                                    
+                        
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text  register-feild-icon" id="basic-addon1">
-                                                
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="29.58" viewBox="0 0 26 29.58">
-                                            <g id="prefix__Group_34" data-name="Group 34" transform="translate(-234.613 -349.933)">
-                                                <path id="prefix__Path_37" d="M258.762 377.683c1.891-.005 1.913-.007 1.823 1.83h-25.972c.1-.555.038-1.242.347-1.546s1-.246 1.594-.359v-.539-25.36c0-1.3.47-1.776 1.752-1.777h18.724c1.249 0 1.732.487 1.732 1.744v25.36zm-9.248.014c0-1.656.011-3.263-.007-4.869-.005-.483-.342-.681-.794-.685q-1-.01-2 0c-.686.005-.91.234-.913.937v4.62zm-3.7-22.221c0-.342.007-.684 0-1.026-.015-.572-.247-.817-.811-.828q-1.051-.02-2.1 0c-.542.009-.79.248-.8.783-.016.717-.015 1.436 0 2.154a.689.689 0 0 0 .755.776q1.1.028 2.2 0a.7.7 0 0 0 .754-.783c.013-.357.002-.717.002-1.076zm5.59-1.857c-.359 0-.718-.008-1.077 0-.571.015-.812.247-.823.816q-.019 1.051 0 2.1a.7.7 0 0 0 .788.8q1.076.023 2.153 0a.7.7 0 0 0 .771-.765c.017-.735.011-1.47 0-2.2a.691.691 0 0 0-.739-.743c-.354-.021-.714-.006-1.077-.007zm-7.479 9.278c.342 0 .684.006 1.026 0 .594-.012.852-.254.861-.834q.017-1.025 0-2.051c-.008-.573-.245-.821-.806-.832-.7-.014-1.4-.013-2.1 0-.545.009-.794.246-.806.779-.016.717-.015 1.436 0 2.153.011.531.26.765.8.784.341.011.683.004 1.025.004zm7.425 0c.359 0 .718.01 1.077 0a.716.716 0 0 0 .792-.8c.014-.717.015-1.436 0-2.153a.688.688 0 0 0-.77-.763c-.717-.017-1.436-.015-2.153 0a.7.7 0 0 0-.79.8c-.014.718-.015 1.436 0 2.153a.693.693 0 0 0 .767.766c.359.01.719 0 1.077 0zm-9.258 3.676c0 .342-.006.684 0 1.026.013.6.244.844.838.853q1.025.016 2.051 0c.562-.009.818-.258.828-.814q.019-1.051 0-2.1c-.01-.54-.251-.787-.787-.8q-1.076-.023-2.153 0a.694.694 0 0 0-.774.759c-.015.358-.001.717-.002 1.076zm11.13.051c0-.359.008-.718 0-1.077-.017-.564-.254-.8-.827-.812-.7-.012-1.4-.013-2.1 0-.532.011-.776.258-.786.8-.014.7-.013 1.4 0 2.1.01.565.252.8.825.814.7.012 1.4.013 2.1 0 .525-.01.771-.268.789-.8.01-.341 0-.683 0-1.025z" data-name="Path 37" style="fill:#d8b053"/>
-                                            </g>
-                                        </svg>
+                        
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="29.58" viewBox="0 0 26 29.58">
+                                                    <g id="prefix__Group_34" data-name="Group 34" transform="translate(-234.613 -349.933)">
+                                                        <path id="prefix__Path_37"
+                                                            d="M258.762 377.683c1.891-.005 1.913-.007 1.823 1.83h-25.972c.1-.555.038-1.242.347-1.546s1-.246 1.594-.359v-.539-25.36c0-1.3.47-1.776 1.752-1.777h18.724c1.249 0 1.732.487 1.732 1.744v25.36zm-9.248.014c0-1.656.011-3.263-.007-4.869-.005-.483-.342-.681-.794-.685q-1-.01-2 0c-.686.005-.91.234-.913.937v4.62zm-3.7-22.221c0-.342.007-.684 0-1.026-.015-.572-.247-.817-.811-.828q-1.051-.02-2.1 0c-.542.009-.79.248-.8.783-.016.717-.015 1.436 0 2.154a.689.689 0 0 0 .755.776q1.1.028 2.2 0a.7.7 0 0 0 .754-.783c.013-.357.002-.717.002-1.076zm5.59-1.857c-.359 0-.718-.008-1.077 0-.571.015-.812.247-.823.816q-.019 1.051 0 2.1a.7.7 0 0 0 .788.8q1.076.023 2.153 0a.7.7 0 0 0 .771-.765c.017-.735.011-1.47 0-2.2a.691.691 0 0 0-.739-.743c-.354-.021-.714-.006-1.077-.007zm-7.479 9.278c.342 0 .684.006 1.026 0 .594-.012.852-.254.861-.834q.017-1.025 0-2.051c-.008-.573-.245-.821-.806-.832-.7-.014-1.4-.013-2.1 0-.545.009-.794.246-.806.779-.016.717-.015 1.436 0 2.153.011.531.26.765.8.784.341.011.683.004 1.025.004zm7.425 0c.359 0 .718.01 1.077 0a.716.716 0 0 0 .792-.8c.014-.717.015-1.436 0-2.153a.688.688 0 0 0-.77-.763c-.717-.017-1.436-.015-2.153 0a.7.7 0 0 0-.79.8c-.014.718-.015 1.436 0 2.153a.693.693 0 0 0 .767.766c.359.01.719 0 1.077 0zm-9.258 3.676c0 .342-.006.684 0 1.026.013.6.244.844.838.853q1.025.016 2.051 0c.562-.009.818-.258.828-.814q.019-1.051 0-2.1c-.01-.54-.251-.787-.787-.8q-1.076-.023-2.153 0a.694.694 0 0 0-.774.759c-.015.358-.001.717-.002 1.076zm11.13.051c0-.359.008-.718 0-1.077-.017-.564-.254-.8-.827-.812-.7-.012-1.4-.013-2.1 0-.532.011-.776.258-.786.8-.014.7-.013 1.4 0 2.1.01.565.252.8.825.814.7.012 1.4.013 2.1 0 .525-.01.771-.268.789-.8.01-.341 0-.683 0-1.025z"
+                                                            data-name="Path 37" style="fill:#d8b053" />
+                                                    </g>
+                                                </svg>
                                             </span>
                                         </div>
-                                        <input  type="text" class="form-control register-input-feild" placeholder="company / brand"
-                                        aria-label="Username" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control register-input-feild" placeholder="company / brand"
+                                            aria-label="Username" aria-describedby="basic-addon1">
                                     </div>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text  register-feild-icon rfi4" id="basic-addon1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24.987" height="42.342" viewBox="0 0 24.987 42.342">
-                                                    <path id="prefix__forma-1" d="M22.987.6H3.81A2.89 2.89 0 0 0 .9 3.46v36.621a2.891 2.891 0 0 0 2.9 2.861h19.187a2.89 2.89 0 0 0 2.905-2.86V3.46A2.891 2.891 0 0 0 22.987.6zM10.331 2.662h6.135a.346.346 0 1 1 0 .692h-6.135a.346.346 0 1 1 0-.692zM13.4 41.513a1.43 1.43 0 1 1 1.453-1.431 1.441 1.441 0 0 1-1.453 1.431zm10.471-3.863H2.926V5.136h20.945z" transform="translate(-.905 -.6)" style="fill:#dbb354;fill-rule:evenodd;opacity:.988"/>
-                                                </svg> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24.987" height="42.342"
+                                                    viewBox="0 0 24.987 42.342">
+                                                    <path id="prefix__forma-1"
+                                                        d="M22.987.6H3.81A2.89 2.89 0 0 0 .9 3.46v36.621a2.891 2.891 0 0 0 2.9 2.861h19.187a2.89 2.89 0 0 0 2.905-2.86V3.46A2.891 2.891 0 0 0 22.987.6zM10.331 2.662h6.135a.346.346 0 1 1 0 .692h-6.135a.346.346 0 1 1 0-.692zM13.4 41.513a1.43 1.43 0 1 1 1.453-1.431 1.441 1.441 0 0 1-1.453 1.431zm10.471-3.863H2.926V5.136h20.945z"
+                                                        transform="translate(-.905 -.6)" style="fill:#dbb354;fill-rule:evenodd;opacity:.988" />
+                                                </svg>
                                             </span>
                                         </div>
-                                        <input  type="text" class="form-control register-input-feild" placeholder="phone number"
-                                        aria-label="Username" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control register-input-feild" placeholder="phone number"
+                                            aria-label="Username" aria-describedby="basic-addon1">
                                     </div>
+                                </div>
                             </div>
-                        </div>
                             <div class="col-6">
                                 <div class="user-detail-feilds-two user-detail-feilds-two-2">
-                                
+                        
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text  register-feild-icon rfi2" id="basic-addon1"><i
-                                            class="fa fa-envelope"></i></span>
+                                                    class="fa fa-envelope"></i></span>
                                         </div>
-                                        <input  type="text" class="form-control register-input-feild" placeholder="email address"
-                                        aria-label="Username" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control register-input-feild" placeholder="email address"
+                                            aria-label="Username" aria-describedby="basic-addon1">
                                     </div>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text  register-feild-icon" id="basic-addon1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="29.263" height="29.298" viewBox="0 0 29.263 29.298">
-                                                    <path id="prefix__forma-1" d="M.914 20.74a9.209 9.209 0 0 1 9.212-9.223 11.32 11.32 0 0 1 3.252.542L24.758.665h5.419v5.426h-3.251v3.255h-3.252V12.6L18.8 17.484a10.249 10.249 0 0 1 .542 3.256 9.213 9.213 0 1 1-18.425 0zm9.754 2.712A3.2 3.2 0 0 0 7.417 20.2a3.256 3.256 0 0 0 0 6.511 3.2 3.2 0 0 0 3.251-3.259z" transform="translate(-.914 -.665)" style="fill:#dbb354;fill-rule:evenodd;opacity:.988"/>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="29.263" height="29.298"
+                                                    viewBox="0 0 29.263 29.298">
+                                                    <path id="prefix__forma-1"
+                                                        d="M.914 20.74a9.209 9.209 0 0 1 9.212-9.223 11.32 11.32 0 0 1 3.252.542L24.758.665h5.419v5.426h-3.251v3.255h-3.252V12.6L18.8 17.484a10.249 10.249 0 0 1 .542 3.256 9.213 9.213 0 1 1-18.425 0zm9.754 2.712A3.2 3.2 0 0 0 7.417 20.2a3.256 3.256 0 0 0 0 6.511 3.2 3.2 0 0 0 3.251-3.259z"
+                                                        transform="translate(-.914 -.665)"
+                                                        style="fill:#dbb354;fill-rule:evenodd;opacity:.988" />
                                                 </svg>
-                                                
+                        
                                             </span>
                                         </div>
-                                        <input  type="text" class="form-control register-input-feild" placeholder="create password"
-                                        aria-label="Username" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control register-input-feild" placeholder="create password"
+                                            aria-label="Username" aria-describedby="basic-addon1">
                                     </div>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text  register-feild-icon" id="basic-addon1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="29.263" height="29.298" viewBox="0 0 29.263 29.298">
-                                                    <path id="prefix__forma-1" d="M.914 20.74a9.209 9.209 0 0 1 9.212-9.223 11.32 11.32 0 0 1 3.252.542L24.758.665h5.419v5.426h-3.251v3.255h-3.252V12.6L18.8 17.484a10.249 10.249 0 0 1 .542 3.256 9.213 9.213 0 1 1-18.425 0zm9.754 2.712A3.2 3.2 0 0 0 7.417 20.2a3.256 3.256 0 0 0 0 6.511 3.2 3.2 0 0 0 3.251-3.259z" transform="translate(-.914 -.665)" style="fill:#dbb354;fill-rule:evenodd;opacity:.988"/>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="29.263" height="29.298"
+                                                    viewBox="0 0 29.263 29.298">
+                                                    <path id="prefix__forma-1"
+                                                        d="M.914 20.74a9.209 9.209 0 0 1 9.212-9.223 11.32 11.32 0 0 1 3.252.542L24.758.665h5.419v5.426h-3.251v3.255h-3.252V12.6L18.8 17.484a10.249 10.249 0 0 1 .542 3.256 9.213 9.213 0 1 1-18.425 0zm9.754 2.712A3.2 3.2 0 0 0 7.417 20.2a3.256 3.256 0 0 0 0 6.511 3.2 3.2 0 0 0 3.251-3.259z"
+                                                        transform="translate(-.914 -.665)"
+                                                        style="fill:#dbb354;fill-rule:evenodd;opacity:.988" />
                                                 </svg>
-                                                
+                        
                                             </span>
                                         </div>
-                                        <input  type="text" class="form-control register-input-feild" placeholder="confirm your password"
-                                        aria-label="Username" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control register-input-feild" placeholder="confirm your password"
+                                            aria-label="Username" aria-describedby="basic-addon1">
                                     </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-6">
+                                <div class="user-register-btn user-detail-feilds-two">
+                                    <button type="submit" class="w-100">register</button>
+                                </div>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <span>Already have an account?</span><a href="#">Sign in Now</a>
+                            </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
