@@ -176,24 +176,20 @@ color: #d4b354;
     border-radius: 20px;
 }
 .maindiv {
-  background: url("./images/main-background.png") no-repeat center top,
-    linear-gradient(to top, rgba(219, 179, 84, 0.9), rgba(219, 179, 84, 1));
-  background-size: cover;
-  padding: 3rem 4rem 0rem;
-  width: 100%;
-}
-.maindiv-event {
-  background: url("./images/main-background.png") no-repeat center top,
-    linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+  background: url("./images/home_page.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 3rem 4rem 0rem;
   width: 100%;
 }
 .category-page-maindiv {
-  background: url("./images/main-background.png") no-repeat center top,
-    linear-gradient(to top, rgba(219, 179, 84, 0.9), rgba(219, 179, 84, 1));
-  background-size: cover;
-  padding: 3rem 4rem 0rem;
+  background: url("./images/about_banner.jpg");
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   padding: 3rem 4rem 0rem;
   width: 100%;
   height: 426px;
 }
@@ -1534,9 +1530,6 @@ input[type="radio"]:checked {
 .text-image-section-image img {
   width: 100%;
   height: 100%;
-  box-shadow: 27px 26px 5px 1px rgba(219, 179, 84, 1);
-  -webkit-box-shadow: 27px 26px 5px 1px rgba(219, 179, 84, 1);
-  -moz-box-shadow: 27px 26px 5px 1px rgba(219, 179, 84, 1);
 }
 
 .aboutUs-footer-section {
@@ -1546,14 +1539,15 @@ input[type="radio"]:checked {
               /* event-page */
 
               
-.maindiv-event {
-  background: url("./images/main-background.png") no-repeat center top,
-    linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
-  background-size: cover;
-  padding: 3rem 4rem 0rem;
-  width: 100%;
-  height: 812px;
-}
+  .maindiv-event {
+    background: url("./images/event.jpg");
+    height: 100vh;
+    background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     padding: 3rem 4rem 0rem;
+    width: 100%;
+  }
 .call-event {
   display: inline-block;
   margin-left: 1rem;

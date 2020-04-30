@@ -75,6 +75,15 @@
     padding: 0px 0px;
     float: left !important;
 }
+
+.user-detail-feilds-two .already-account {
+    margin-top: -20px;
+
+}
+.user-detail-feilds-two .already-account span {
+    font-size: 15px;
+
+}
 input::placeholder { /* WebKit, Blink, Edge */
     color: black !important;
     opacity: 1;
@@ -336,17 +345,19 @@ input::placeholder { /* WebKit, Blink, Edge */
                             </div>
                             <div class="col-3"></div>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <span>Already have an account?</span><a href="#">Sign in Now</a>
+                        <div class="row user-detail-feilds-two">
+                            <div class="col-12 already-account">
+                                <span>Already have an account?</span><a href="#"> Sign in Now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">              
                     </div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        <div class="payment-feilds">
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-6">
+                                <div class="payment-feilds">
                             <div class="input-group mb-4">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text  register-feild-icon rfi5" id="basic-addon1"><i
@@ -402,9 +413,11 @@ input::placeholder { /* WebKit, Blink, Edge */
                                 <input  type="text" class="form-control register-input-feild" placeholder="postal code"
                                 aria-label="Username" aria-describedby="basic-addon1">
                             </div>
-                        </div>
-                        <div class="payments-pay-now-btn">
-                            <button type="submit"  class="w-100" >pay now</button>
+                                </div>
+                                <div class="payments-pay-now-btn">
+                                    <button type="submit"  class="w-100" >pay now</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
