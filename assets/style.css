@@ -966,8 +966,15 @@ color: #d4b354;
   text-align: justify;
   color: #d4b363;
 }
+.owl-carousel .owl-nav button.owl-next:focus,
+.owl-carousel .owl-nav button.owl-prev:focus{
+  outline: none;
+  border: none;
 
-.owl-carousel .owl-nav button.owl-next {
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
   background: black;
   position: absolute;
   width: 40px;
@@ -982,18 +989,7 @@ color: #d4b354;
   display: inline-block;
 }
 .owl-carousel .owl-nav button.owl-prev {
-  display: inline-block;
-  background: black;
-  position: absolute;
-  width: 40px;
-  border-radius: 100px;
-  height: 40px;
   left: -30%;
-  top: 40%;
-  font-size: 20px;
-  font-weight: bolder;
-  color: #8c6e28;
-  padding: 20px;
 }
 .owl-dots {
   text-align: center;
@@ -1306,21 +1302,23 @@ color: #d4b354;
   opacity: 1;
 }
 .submit-bg {
-  margin: 38px 0px 0px 0px;
+  border: black;
+  border-radius: 5px;
+  margin: 20px 0px 0px 0px;
   width: 506px;
   height: 52px;
   background-color: #000000;
   font-family: Nexa;
   font-size: 18px;
   font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
   letter-spacing: 3.6px;
   text-align: center;
   color: #dbb354;
 }
-
+input::placeholder,textarea::placeholder{
+  color: black;
+  opacity: 1;
+}
 .reach-to-us {
   box-sizing: border-box;
   z-index: 1;
@@ -1329,6 +1327,7 @@ color: #d4b354;
   position: absolute;
 }
 .Rectangle-15 {
+  border: black;
   width: 400px;
   height: 80px;
   border-radius: 6px;
