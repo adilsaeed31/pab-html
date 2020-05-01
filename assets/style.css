@@ -1245,6 +1245,7 @@ color: #d4b354;
   color: #d4b363;
   margin: 20px 0px 20px 70px;
   padding:5px 12px 2px  12px;
+  transition: all 0.35s ease-in-out;
 }
 .instagram {
   font-size: 20.5px;
@@ -1252,6 +1253,7 @@ color: #d4b354;
   margin: 20px 0px 20px 30px;
   color: #d4b363;
   padding:3px 9px 2px  9px;
+  transition: all 0.35s ease-in-out;
 }
 .twitter {
   padding:3px 8px 2px  8px;
@@ -1259,6 +1261,7 @@ color: #d4b354;
   display: inline-block;
   margin: 20px 0px 20px 30px;
   color: #d4b363;
+  transition: all 0.35s ease-in-out;
 }
 .facebook:hover,.instagram:hover,.twitter:hover{
   background-color: #d4b363;
@@ -1314,6 +1317,11 @@ color: #d4b354;
   letter-spacing: 3.6px;
   text-align: center;
   color: #dbb354;
+  transition: all 0.35s ease-in-out;
+}
+
+.submit-bg:hover,.Rectangle-15:hover {
+  color: white;
 }
 input::placeholder,textarea::placeholder{
   color: black;
@@ -1339,6 +1347,7 @@ input::placeholder,textarea::placeholder{
   line-height: 2.97;
   letter-spacing: 3.6px;
   color: #dbb354;
+  transition: all 0.35s ease-in-out;
 }
 
 #slider {
