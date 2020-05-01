@@ -12,133 +12,7 @@
     <link rel="stylesheet" href="./assets/owl/owl.carousel.min.css" />
     <link rel="stylesheet" href="./assets/style.css?v=1" />
     <link rel="stylesheet" href="./assets/custom.css?v=1" />
-    <style>
-        .project-tab {
-    padding-top: 10%;
-}
-.nav-tabs{
-    border-bottom: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: black;
-    background-color: transparent;
-    border-color: transparent transparent #f3f3f3;
-    border-bottom: 3px solid !important;
-    font-size: 14px;
-    font-weight: bold;
-    opacity: 1;
-}
-.project-tab .nav-link {
-    border: 1px solid transparent;
-    border-bottom: 3px solid !important;
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-    opacity: 0.3;
-    margin-right:5px;
-}
-
-.project-tab .nav-link:nth-child(3) {
-    margin-right:0px;
-}
-.project-tab .nav-link i {
-    font-size: 20px;
-}
-.project-tab .nav-link:hover {
-    border: none;
-}
-.project-tab a{
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-}
-.user-detail-feilds,.user-detail-feilds-two,.payment-feilds{
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-    padding: 0px 50px;
-}
-.user-detail-feilds-two-1{
-    margin-top: 50px;
-    width: 80%;
-    text-align: center;
-    padding: 0px 0px;
-    float: right;
-}
-.user-detail-feilds-two-2{
-    margin-top: 50px;
-    width: 80%;
-    text-align: center;
-    padding: 0px 0px;
-    float: left !important;
-}
-
-.user-detail-feilds-two .already-account {
-    margin-top: -20px;
-
-}
-.user-detail-feilds-two .already-account span {
-    font-size: 15px;
-
-}
-input::placeholder { /* WebKit, Blink, Edge */
-    color: black !important;
-    opacity: 1;
-    text-transform: uppercase;
-    font-size: 13px;
-}
-.payments-pay-now-btn{
-    padding: 0px 50px;
-
-}
-
-.payments-pay-now-btn button,.user-register-btn button{
-    border-radius: 10px;
-    background-color: black;
-    color: #d8b053;
-    text-transform: uppercase;
-    font-size: 21px;
-    font-weight: 500;
-    padding:10px 0px ;
-    border: black;
-
-}
-.payments-pay-now-btn button:focus,
-.next-btn:focus,
-.prev-btn:focus,
-.user-register-btn{
-    border: none;
-    outline: none;
-}
-.register-pager-footer{
-    position: absolute;
-    bottom: 2%;
-    width: 95%;
-}
-.prev-btn,.next-btn {
-    color: #d8b053;
-    background-color: black;
-    border: black;
-    border-radius:100px ;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 5px 25px;
-}
-.prev-btn {
-    float: left;
-}
-.next-btn{
-    float: right;
-}
-.back-user-one{
-    cursor: pointer;
-}
-    </style>
- 
+   
   </head>
 
   <body class="">
@@ -182,61 +56,7 @@ input::placeholder { /* WebKit, Blink, Edge */
                     </div>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="row">
-                            <div class="col-3"></div>
-                            <div class="col-6">
-                                <div class="user-detail-feilds" id="user-feilds-first">
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text  register-feild-icon rfi1 " id="basic-addon1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="33.312" height="33.349"
-                                                    viewBox="0 0 33.312 33.349">
-                                                    <path id="prefix__forma-1"
-                                                        d="M33.082 32.786a1.873 1.873 0 0 1-1.58.866H1.96a1.871 1.871 0 0 1-1.579-.866 1.918 1.918 0 0 1-.143-1.811L4.006 22.4a1.9 1.9 0 0 1 .852-.916l5.848-3.084a.376.376 0 0 1 .4.033 9.146 9.146 0 0 0 11.247 0 .374.374 0 0 1 .4-.033l5.847 3.081a1.9 1.9 0 0 1 .852.916l3.769 8.578a1.918 1.918 0 0 1-.143 1.811zM16.731 17.972c-4.124 0-7.469-3.955-7.469-8.835C9.262 2.372 12.607.3 16.731.3S24.2 2.372 24.2 9.137c0 4.88-3.343 8.835-7.469 8.835z"
-                                                        transform="translate(-.076 -.303)"
-                                                        style="fill:#dbb354;fill-rule:evenodd;opacity:.988" />
-                                                </svg>
-                        
-                                            </span>
-                                        </div>
-                                        <input type="text" class="form-control register-input-feild" placeholder="full name"
-                                            aria-label="Username" aria-describedby="basic-addon1">
-                                    </div>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text  register-feild-icon rfi2" id="basic-addon1"><i
-                                                    class="fa fa-envelope"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control register-input-feild" placeholder="email address"
-                                            aria-label="Username" aria-describedby="basic-addon1">
-                                    </div>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text  register-feild-icon rfi3" id="basic-addon1"><i
-                                                    class="fa fa-question"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control register-input-feild" placeholder="company / brand"
-                                            aria-label="Username" aria-describedby="basic-addon1">
-                                    </div>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text  register-feild-icon rfi4" id="basic-addon1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24.987" height="42.342"
-                                                    viewBox="0 0 24.987 42.342">
-                                                    <path id="prefix__forma-1"
-                                                        d="M22.987.6H3.81A2.89 2.89 0 0 0 .9 3.46v36.621a2.891 2.891 0 0 0 2.9 2.861h19.187a2.89 2.89 0 0 0 2.905-2.86V3.46A2.891 2.891 0 0 0 22.987.6zM10.331 2.662h6.135a.346.346 0 1 1 0 .692h-6.135a.346.346 0 1 1 0-.692zM13.4 41.513a1.43 1.43 0 1 1 1.453-1.431 1.441 1.441 0 0 1-1.453 1.431zm10.471-3.863H2.926V5.136h20.945z"
-                                                        transform="translate(-.905 -.6)" style="fill:#dbb354;fill-rule:evenodd;opacity:.988" />
-                                                </svg>
-                        
-                                            </span>
-                                        </div>
-                                        <input type="text" class="form-control register-input-feild" placeholder="phone number"
-                                            aria-label="Username" aria-describedby="basic-addon1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3"></div>
-                        </div>
+
                         <div class="row">
                             <div class="col-6">
                                 <div class="user-detail-feilds-two user-detail-feilds-two-1">
@@ -336,22 +156,70 @@ input::placeholder { /* WebKit, Blink, Edge */
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mt-3">
                             <div class="col-3"></div>
-                            <div class="col-6">
-                                <div class="user-register-btn user-detail-feilds-two">
+                            <div class="col-6 pl-5 pr-5">
+                                <div class="user-register-btn">
                                     <button type="submit" class="w-100">register</button>
                                 </div>
                             </div>
                             <div class="col-3"></div>
                         </div>
-                        <div class="row user-detail-feilds-two">
+                        <div class="row mt-3">
                             <div class="col-12 already-account">
                                 <span>Already have an account?</span><a href="#"> Sign in Now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">              
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-6">
+                                <div class="verify-documents-sec">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <lable>id</lable>
+                                        </div>
+                                        <div class="col-9">
+                                            <button class="id-btn">
+                                             image.jpg
+                                            </button></div>
+                                    </div>
+                                </div>
+                                <div class="verify-documents-sec">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <lable>cr</lable>
+                                        </div>
+                                        <div class="col-9">
+                                            <button class="id-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35.767" height="35.767" viewBox="0 0 35.767 35.767">
+                                                <path id="prefix__Path_24" d="M12.043 22.882a3.613 3.613 0 1 1-7.226 0V6.022a6.022 6.022 0 0 1 12.043 0v19.269a8.43 8.43 0 0 1-16.86 0V13.248a1.2 1.2 0 0 1 2.409 0v12.043a6.022 6.022 0 1 0 12.043 0V6.022a3.613 3.613 0 0 0-7.226 0v16.86a1.2 1.2 0 1 0 2.409 0v-4.817a1.2 1.2 0 1 1 2.409 0z" data-name="Path 24" transform="rotate(-45 14.391 5.961)" style="fill:#dbb354;fill-rule:evenodd"/>
+                                            </svg>
+                                            </button></div>
+                                    </div>
+                                </div>
+                                <div class="verify-documents-sec">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <lable>tl</lable>
+                                        </div>
+                                        <div class="col-9">
+                                            <button class="id-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35.767" height="35.767" viewBox="0 0 35.767 35.767">
+                                                <path id="prefix__Path_24" d="M12.043 22.882a3.613 3.613 0 1 1-7.226 0V6.022a6.022 6.022 0 0 1 12.043 0v19.269a8.43 8.43 0 0 1-16.86 0V13.248a1.2 1.2 0 0 1 2.409 0v12.043a6.022 6.022 0 1 0 12.043 0V6.022a3.613 3.613 0 0 0-7.226 0v16.86a1.2 1.2 0 1 0 2.409 0v-4.817a1.2 1.2 0 1 1 2.409 0z" data-name="Path 24" transform="rotate(-45 14.391 5.961)" style="fill:#dbb354;fill-rule:evenodd"/>
+                                            </svg>
+                                            </button></div>
+                                    </div>
+                                </div>
+                                <div class="verify-documents-sec-btn">                               
+                                    <div class="next-btn">
+                                        <button class="w-100">next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>              
                     </div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                         <div class="row">
@@ -427,12 +295,6 @@ input::placeholder { /* WebKit, Blink, Edge */
 </section>
         </div>
 </form>
-    <footer>
-        <div class="register-pager-footer">
-            <button class="prev-btn" >back</button>
-            <button class="next-btn">next</button>
-        </div>
-    </footer>
       </section>
 
     <script src="./assets/jquery/jquery.min.js"></script>
@@ -442,25 +304,25 @@ input::placeholder { /* WebKit, Blink, Edge */
     <script src="./assets/jquery/custom.js"></script>
     <script>
         
-        $('.user-detail-feilds-two').hide();
-            $('.back-user-one').hide();
+        // $('.user-detail-feilds-two').hide();
+        //     $('.back-user-one').hide();
 
-        $(".next-btn").click(function(){
-            $('.user-detail-feilds-two').show();
-            $('#user-feilds-first').hide();
-            $(".prev-btn").hide();
-            $(".next-btn").hide();
-            $('.back-user-one').show();
-        });
+        // $(".next-btn").click(function(){
+        //     $('.user-detail-feilds-two').show();
+        //     $('#user-feilds-first').hide();
+        //     $(".prev-btn").hide();
+        //     $(".next-btn").hide();
+        //     $('.back-user-one').show();
+        // });
         
-        $("#back-user-one").click(function(){
+        // $("#back-user-one").click(function(){
 
-            $('.user-detail-feilds-two').hide();
-            $('#user-feilds-first').show();
-            $(".prev-btn").show();
-            $(".next-btn").show();
-            $('.back-user-one').hide();
-        });
+        //     $('.user-detail-feilds-two').hide();
+        //     $('#user-feilds-first').show();
+        //     $(".prev-btn").show();
+        //     $(".next-btn").show();
+        //     $('.back-user-one').hide();
+        // });
     </script>
 
   </body>

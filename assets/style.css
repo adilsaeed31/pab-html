@@ -2586,3 +2586,377 @@ header .logo img{
   color: black;
   background-color: transparent;
 }
+
+.project-tab {
+  padding-top: 10%;
+}
+.nav-tabs{
+  border-bottom: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: black;
+  background-color: transparent;
+  border-color: transparent transparent #f3f3f3;
+  border-bottom: 3px solid !important;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 1;
+}
+.project-tab .nav-link {
+  border: 1px solid transparent;
+  border-bottom: 3px solid !important;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.3;
+  margin-right:5px;
+}
+
+.project-tab .nav-link:nth-child(3) {
+  margin-right:0px;
+}
+.project-tab .nav-link i {
+  font-size: 20px;
+}
+.project-tab .nav-link:hover {
+  border: none;
+}
+.project-tab a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+.user-detail-feilds,.user-detail-feilds-two,.payment-feilds{
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  padding: 0px 50px;
+}
+.user-detail-feilds-two .already-account span {
+  font-size: 15px;
+  margin-top: 5px;
+
+}
+input::placeholder { /* WebKit, Blink, Edge */
+  color: black !important;
+  opacity: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.payments-pay-now-btn{
+  padding: 0px 50px;
+
+}
+
+.payments-pay-now-btn button,.user-register-btn button,.n-success-page-verify-btn button{
+  border-radius: 10px;
+  background-color: black;
+  color: #d8b053;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 600;
+  padding:10px 0px ;
+  border: black;
+
+}
+.payments-pay-now-btn button:focus,
+.next-btn:focus,
+.prev-btn:focus,
+.user-register-btn{
+  border: none;
+  outline: none;
+}
+.back-user-one{
+  cursor: pointer;
+}
+
+
+/* Styling Checkbox Starts */
+.checkbox-label {
+display: inline-block;
+position: relative;
+margin: auto;
+cursor: pointer;
+font-size: 22px;
+height: 24px;
+width: 24px;
+clear: both;
+}
+
+.checkbox-label input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+position: absolute;
+top: 0px;
+left: 0px;
+height: 24px;
+width: 24px;
+background-color: transparent;
+transition: all 0.3s ease-out;
+-webkit-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+border: 2px solid black;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+background-color: black;
+-webkit-transform: rotate(0deg) scale(1);
+-ms-transform: rotate(0deg) scale(1);
+transform: rotate(0deg) scale(1);
+opacity:1;
+border: 2px solid black;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+position: absolute;
+content: "";
+left: 12px;
+top: 12px;
+height: 0px;
+width: 0px;
+border: solid #d8b053;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(0deg) scale(0);
+-ms-transform: rotate(0deg) scale(0);
+transform: rotate(0deg) scale(0);
+opacity:1;
+transition: all 0.3s ease-out;
+-webkit-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+-webkit-transform: rotate(45deg) scale(1);
+-ms-transform: rotate(45deg) scale(1);
+transform: rotate(45deg) scale(1);
+opacity:1;
+left: 8px;
+top: 3px;
+width: 6px;
+height: 12px;
+border: solid #d8b053;
+border-width: 0 2px 2px 0;
+background-color: transparent;
+border-radius: 0;
+}
+.verify-documents-sec{
+  margin-top: 30px;
+  padding: 0px 50px;
+
+}
+.verify-documents-sec lable{
+  text-transform: uppercase;
+  font-size: 24px;
+  display: inline-block;
+  margin-top: 20px;
+  
+}
+.verify-documents-sec button{
+  border: black;
+  background-color: black;
+  border-radius: 33px;
+  color: #d8b053;
+  width: 271px;
+  height: 76px;
+  padding: 5px 35px;
+  
+}
+.verify-documents-sec-btn{
+  padding: 0px 10px;
+  margin-top: 20px;
+
+}
+.n-success-page-verify-btn{
+  margin-top: 30px;
+}
+.next-btn button{ 
+  padding: 10px 20px;
+  letter-spacing: 1.26px;
+  color: #d8b053;
+  background-color: black;
+  border: black;
+  border-radius:10px ;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+
+}
+.n-success-page-verify-icon span{
+  margin-top:50px ;
+color: #d8b053;
+border: black;
+font-weight: light;
+display: inline-block;
+}
+.n-success-page-register-text{
+  margin-top:32px ;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.n-success-page-verify-text{
+  margin-top:10px ;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0.27px;
+  text-align: center;
+  color: black;
+}
+/* login-page */
+.login-page-forgot,
+.login-page-remember,
+.login-page-singup,
+.login-page-singup a{
+color: #d8b053;
+text-decoration: none;
+}
+.login-page-remember{
+  display: inline-block;
+  margin-top: -5px;
+}
+
+/* Styling Checkbox Starts */
+.login-page-checkbox-label {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  font-size: 22px;
+  height: 24px;
+  width: 24px;
+  clear: both;
+  }
+  
+  .login-page-checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  }
+  
+  .login-page-checkbox-label .checkbox-custom {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  border: 2px solid #d8b053;
+  border-radius: 5px;
+  }
+  
+  
+  .login-page-checkbox-label input:checked ~ .checkbox-custom {
+  background-color: #d8b053;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity:1;
+  border: 2px solid #d8b053;
+  }
+  
+  
+  .login-page-checkbox-label .checkbox-custom::after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 12px;
+  height: 0px;
+  width: 0px;
+  border: solid #d8b053;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(0deg) scale(0);
+  -ms-transform: rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
+  opacity:1;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  }
+  
+  
+  .login-page-checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 6px;
+  top: 0px;
+  width: 6px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+  }
+  .login-page-register-input-feild,
+  .login-page-register-input-feild-two{
+    border: 2px solid #d8b053;
+    border-radius: 10px;
+    padding: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #d8b053;
+    background-color: transparent;
+  }
+  .login-page-register-input-feild-two{
+    border-right:none;
+    width: 50%;
+  }
+  
+.login-page-register-feild-icon,
+.login-page-register-feild-icon-eye{
+  width: 60px;
+  background-color: black;
+  color: #d4b354;
+  border: 2px solid #d8b053;
+  border-right:none;
+  border-radius: 10px;
+  padding: 7px 15px;
+  font-size: 35px;
+}
+  
+.login-page-register-feild-icon-eye{
+  border-left:none;
+  border-right: 2px solid #d8b053;
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  background-color: transparent !important;
+}
+.login-page-register-input-feild::placeholder,
+.login-page-register-input-feild-two::placeholder{
+  color: #d8b053 !important;
+  opacity: 1;
+}
+.login-page-login-btn button{
+  border-radius: 10px;
+  background-color:#d8b053;
+  color: black;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 600;
+  padding:10px 0px ;
+  border: #d8b053;
+
+}
