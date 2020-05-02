@@ -13,28 +13,9 @@
   src: url("./fonts/Nexa/Nexa/Nexa_V1_2012/Nexa\ Bold.otf");
   src: url("./fonts/Nexa/Nexa/Nexa_V1_2012/Nexa\ Light.otf");
 }
-
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: black;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px black; 
-  border-radius: 0px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(to top,rgba(0,0,0,0.5),#b79136);
-  border-radius: 100px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom,rgba(0,0,0,0.2),#b79136),
-  linear-gradient(to top,rgba(0,0,0,0.2),#b79136); 
+@font-face {
+  font-family: "SFProRounded";
+  src: url("fonts/FontsFree-Net-SF-Pro-Rounded-Regular.ttf");
 }
 
 body {
@@ -2665,7 +2646,8 @@ input::placeholder { /* WebKit, Blink, Edge */
 .payments-pay-now-btn button:focus,
 .next-btn:focus,
 .prev-btn:focus,
-.user-register-btn{
+.user-register-btn,
+.forgot-submit-btn{
   border: none;
   outline: none;
 }
@@ -2933,11 +2915,14 @@ text-decoration: none;
   border: 2px solid #d8b053;
   border-right:none;
   border-radius: 10px;
-  padding: 7px 15px;
+  padding:7px 15px;
   font-size: 35px;
 }
   
 .login-page-register-feild-icon-eye{
+  width: auto;
+  padding: 0px;
+  cursor: pointer;
   border-left:none;
   border-right: 2px solid #d8b053;
   border-top-right-radius: 10px !important;
@@ -2959,4 +2944,207 @@ text-decoration: none;
   padding:10px 0px ;
   border: #d8b053;
 
+}
+/* register-page */
+.register-page-input-fields-sec,.forgot-password-sec{
+  margin-top: 100px;
+}
+
+.register-page-input-fields-sec-singin span{
+  
+  opacity: 0.99;
+  font-size: 15px;
+  font-weight: normal;
+  color: rgba(1, 1, 1, 0.99);
+}
+.register-page-input-fields-sec-singin a{ 
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+}
+
+
+.register-page-register-input-feild{
+  border: 2px solid black;
+  border-right: none;
+  border-radius: 10px;
+  padding: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+}
+
+
+.register-page-register-feild-icon-eye{
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  border-right:none;
+  border-radius: 10px;
+  padding:0px;
+  font-size: 35px;
+  cursor: pointer;
+}
+  
+.register-page-register-feild-icon-eye{
+  border-left:none;
+  border-right: 2px solid black;
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  background-color: transparent !important;
+}
+.register-page-categories-sec{
+  text-align: center;
+}
+.register-page-categories-sec p{
+  font-size: 23.5px;
+  font-weight: 600;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+.register-page-categories .register-page-categories-category {
+  padding:1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-page-categories .register-page-categories-category .card {
+  display: block;
+  margin-right: 20px;
+}
+
+.register-page-categories .register-page-categories-category .card:nth(5) {
+  margin-right: 0px;
+}
+
+.register-page-categories .register-page-categories-category .cat-dropdown select option:hover {
+  background-color: #d4b354;
+  color: black;
+  font-size: 10px;
+}
+
+.register-page-categories .register-page-categories-category .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border: 1px solid #dbb354;
+  padding: 0.5rem;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.register-page-categories .register-page-categories-category .card-body svg {
+  fill: #d4b363;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  transform: scale(0.7);
+}
+.register-page-categories .register-page-categories-category .card-body:hover {
+  background-color: #dbb354 !important;
+  transform: scale(1.2);
+}
+
+.register-page-categories .register-page-categories-category .card-body:hover svg {
+  fill: #000;
+  transform: scale(1);
+}
+/* forgot-password-sec */
+.forgot-password-fields-sec .please{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #d8b053;
+} 
+.forgot-password-input-field{
+  margin-top: 30px;
+}
+.forgot-password-input-field label{ 
+  font-family: SFProRounded;
+  font-size: 15px;
+  font-weight: 300;
+  color: #dfb758;
+}
+
+.forgot-input-feild{
+  text-align: center;
+  border: 2px solid #d8b053;
+  border-right: none;
+  border-radius: 10px;
+  padding: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #d8b053;
+  object-fit: contain;
+  background-image: linear-gradient(to top, 	rgba(219,	179,	84,0.2),rgba(219,	179,	84,0.2));
+}
+
+.forgot-input-feild::placeholder,
+.forgot-input-feild:focus{
+  color: #d8b053 !important;
+  text-transform: none;
+}
+
+.forgot-feild-icon-eye{
+  background:rgba(219,	179,	84,0.3);
+  color: black;
+  border: 2px solid #d8b053;
+  border-right:none;
+  /* padding:0px; */
+  font-size: 35px;
+  cursor: pointer;
+  margin-left: -2px;
+  border-left:none;
+  border-right: 2px solid #d8b053;
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+.forgot-feild-icon-eye i{
+  color: #d8b053;
+  font-size: 15px;
+  
+}
+
+.forgot-submit-btn button{
+  margin-top: 20px;
+   border-radius: 10px;
+  background-color: #d8b053;
+  color: black;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 600;
+  padding:10px 0px ;
+  border: black;
+
+}
+.map-page-sec .col-4{
+background-color: #d8b053;
+padding: 20px;
+}
+.map-page-sec .col-8 .map-page-image img{
+  
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.map-page-logo{
+  width: 232px;
+  height: 44px;
+  float: left;
+}
+.map-page-logo2{
+  width: 33px;
+  height: 33px;
+  float: right;
+  margin-top: 10px;
+  
 }
