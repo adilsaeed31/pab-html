@@ -1844,11 +1844,12 @@ margin-top: -7px;
   margin:0px 0px 52px 0px ;
 }
 .event-page-section-five .row{
-  background: url("./images/main-background.png") no-repeat center top,
-  linear-gradient(to top, rgba(255, 255, 255,0), rgba(255, 255, 255,1)),
-  linear-gradient(to bottom, rgba(255, 255, 255,0), rgba(255, 255, 255,1)),
-  linear-gradient(to left, rgba(255, 255, 255,0), rgba(255, 255, 255,1)),
-  linear-gradient(to right, rgba(255, 255, 255,0), rgba(255, 255, 255,1));
+  background: url("./images/boothmap.jpg") no-repeat center top,
+  linear-gradient(to top, rgba(255, 255, 255,0.5), rgba(255, 255, 255,1));
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .event-page-section-five-content{
   margin:250px 370px 250px 370px ;
@@ -3131,7 +3132,7 @@ height: 100vh;
 }
 .map-page-sec .map-page-sec-right{
 
-  background-image: url('images/modal-bg.png');
+  background-image: url('images/boothmap.jpg');
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
