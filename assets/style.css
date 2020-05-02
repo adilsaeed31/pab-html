@@ -2606,8 +2606,8 @@ header .logo img{
   border: none;
 }
 .project-tab a{
-  text-decoration: none;
-  color: #333;
+  /* text-decoration: none; */
+  color: black;
   font-weight: 600;
 }
 .user-detail-feilds,.user-detail-feilds-two,.payment-feilds{
@@ -3124,20 +3124,33 @@ text-decoration: none;
   border: black;
 
 }
-.map-page-sec .col-4{
+.map-page-sec .col-3{
 background-color: #d8b053;
 padding: 20px;
+height: 100vh;
 }
-.map-page-sec .col-8 .map-page-image img{
-  
+.map-page-sec .map-page-sec-right{
+
+  background-image: url('images/modal-bg.png');
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  padding: 30px;
+  cursor: pointer;
+}
+.map-page-back-arrow{
+  float: right;
+}
+.map-page-back-arrow span i{
+  color: black;
+  font-size: 40px;
+  font-weight: bolder;
+  cursor: pointer;
 }
 .map-page-logo{
-  width: 232px;
+  width: 200px;
   height: 44px;
   float: left;
 }
@@ -3148,3 +3161,236 @@ padding: 20px;
   margin-top: 10px;
   
 }
+.booking-sections-details{
+  margin-top: 100px;
+}
+@media only screen and (max-width: 992px) {
+ 
+.booking-sections-details{
+  margin-top: 150px;
+}
+
+}
+
+.booking-sections-details-sec-1,
+.booking-sections-details-sec-2,
+.booking-sections-details-sec-3,
+.booking-sections-details-sec-4,
+.booking-sections-details-sec-5,
+.booking-sections-details-sec-6,
+.booking-sections-details-sec-7{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.booking-sections-details-sec-1 .box{
+ background-color: #d1d1d1; 
+ width: 50px;
+ height: 50px;
+ display: inline-block;
+ border-radius: 8px; 
+}
+.booking-sections-details-sec-1 .box img{
+ width: 100%;
+ height: 100%; 
+ border-radius: 8px;
+}
+.booking-sections-details-sec-1 span{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-left: 10px;
+
+}
+
+.booking-sections-details-sec-2 .box,
+.booking-sections-details-sec-3 .box,
+.booking-sections-details-sec-4 .box,
+.booking-sections-details-sec-5 .box,
+.booking-sections-details-sec-6 .box,
+.booking-sections-details-sec-7 .box{
+  display: inline-block;
+  background-color: #fc8d8d;
+  width: 50px;
+  height: 50px;  
+  border-radius: 8px;
+ }
+ 
+.booking-sections-details-sec-3 .box{  
+  background-color: #701b33;
+ }
+ .booking-sections-details-sec-4 .box{
+  background-color: #88198e;
+  }
+  .booking-sections-details-sec-5 .box{
+    background-color: #127faf;
+   } 
+ .booking-sections-details-sec-6 .box{
+  background-color: #d1ca3f;
+ }
+ .booking-sections-details-sec-7 .box{
+  background-color: #017373;
+  }
+
+ .booking-sections-details-sec-2 .text .area,
+ .booking-sections-details-sec-3 .text .area,
+ .booking-sections-details-sec-4 .text .area,
+ .booking-sections-details-sec-5 .text .area,
+ .booking-sections-details-sec-6 .text .area,
+ .booking-sections-details-sec-7 .text .area{
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 10px;
+  }
+  .booking-sections-details-sec-2 .text .bar,
+  .booking-sections-details-sec-3 .text .bar,
+  .booking-sections-details-sec-4 .text .bar,
+  .booking-sections-details-sec-5 .text .bar,
+  .booking-sections-details-sec-6 .text .bar,
+  .booking-sections-details-sec-7 .text .bar{
+   font-size: 20px;
+   font-weight: 600;
+   }
+  .booking-sections-details-sec-2 .text .currency,
+  .booking-sections-details-sec-3 .text .currency,
+  .booking-sections-details-sec-4 .text .currency,
+  .booking-sections-details-sec-5 .text .currency,
+  .booking-sections-details-sec-6 .text .currency,
+  .booking-sections-details-sec-7 .text .currency{
+   font-size: 22px;
+   font-weight: 600;
+   margin-left: 2px;
+   }
+  .booking-sections-details-sec-2 .text .amount,
+  .booking-sections-details-sec-3 .text .amount,
+  .booking-sections-details-sec-4 .text .amount,
+  .booking-sections-details-sec-5 .text .amount,
+  .booking-sections-details-sec-6 .text .amount,
+  .booking-sections-details-sec-7 .text .amount{
+   font-size: 24px;
+   font-weight: 600;
+   margin-left: 2px;
+   }
+   
+   .map-page-footer-btn{
+     margin-left: -20px;
+     position: absolute;
+     bottom: 0px;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .map-page-footer-book-btn,
+   .map-page-footer-hold-btn{
+     /* padding: 1px; */
+     width: 50%;
+     display: inline-block; 
+
+   }
+   .map-page-footer-book-btn a,
+   .map-page-footer-hold-btn a{
+     width: 100%;
+    background-color: #b08c38;
+    color: #dbb354;
+    border-radius: 0px;
+    padding:25px;
+    font-size: 30.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+   }
+   
+   .map-page-footer-book-btn a:hover,
+   .map-page-footer-hold-btn a:hover{
+     background-color: black;
+     color: #dbb354;
+   }
+   .footer-toggle{
+     display: none;
+     position: absolute;
+     width: 100%;
+     bottom: 0;
+     display: flex;
+     transition:all 0.35s ease-in-out;
+   }
+   
+   .footer-toggle-you-selected{
+    display: none;
+    width: 80%;
+    height: 180px;
+    background-color: #dbb354;
+    padding: 20px;
+  }
+  .footer-toggle-you-selected .you-selected-sec-1 p{
+    font-size: 46px;
+    font-weight: bold;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    margin-top:-20px;
+  }
+  .footer-toggle-you-selected .you-selected-sec-2 p{
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+  margin-top:-20px;
+  }
+  .footer-toggle-you-selected .you-selected-sec-3 {
+    display: flex;
+    margin-top:-10px;
+  }
+  .footer-toggle-you-selected .you-selected-sec-3 .you-selected-booth span,
+  .footer-toggle-you-selected .you-selected-sec-3 .you-selected-size span,
+  .footer-toggle-you-selected .you-selected-sec-3 .you-selected-price span {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .footer-toggle-you-selected .you-selected-sec-3 .you-selected-price span i {
+    font-size: 22px;
+  }
+  .footer-toggle-you-selected .you-selected-sec-3 .you-selected-booth span:nth-child(4),
+  .footer-toggle-you-selected .you-selected-sec-3 .you-selected-size span:nth-child(4){
+font-size: 24px;
+  }
+  
+  .footer-toggle-you-selected .you-selected-sec-3 .you-selected-price span:nth-child(3){
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .footer-toggle-you-selected .you-selected-sec-3 .you-selected-booth span:nth-child(3),
+  .footer-toggle-you-selected .you-selected-sec-3 .you-selected-size span:nth-child(3),
+  .footer-toggle-you-selected .you-selected-sec-3 .you-selected-price span:nth-child(4) {
+    font-size: 24px;
+    font-weight: 800;
+  }
+   .footer-toggle-pay-now-btn{
+    display: none;
+    background-color: black;
+    width: 20%;
+    height: 180px;
+   }
+   .footer-toggle-pay-now-btn a{
+    text-decoration: none;
+    color: #d8b053;
+    text-align: center; 
+   }
+   .footer-toggle-pay-now-btn a p{
+     font-size: 20px;
+     text-transform: uppercase;
+     font-weight: bold;
+   }
+   .footer-toggle-pay-now-btn a p:nth-child(1){
+
+    margin-top: 30px;
+   }
+   .footer-toggle-pay-now-btn a p:nth-child(2){
+
+    margin-top: -20px;
+   }
+   .footer-toggle-pay-now-btn a p:nth-child(3){
+     font-size: 50px;
+     font-weight: 700;
+     margin-top: -20px;
+   }
